@@ -1,0 +1,64 @@
+:root {
+    --dark: rgb(20, 20, 20);
+    --yellow: rgb(253, 216, 53);
+    --blue: rgb(98, 0, 234);
+    
+    --c1: rgb(38, 70, 83);
+    --c2: rgb(42, 157, 143);
+    
+    --left-color: var(--c1);
+    --right-color: var(--c2);
+}
+
+body {
+    background-color: var(--dark);
+    margin: 0px;
+}
+
+.side {
+    display: grid;
+    height: 100vh;
+    overflow: hidden;
+    place-items: center;
+    position: absolute;
+    width: 100%;
+}
+
+.side .title {
+    font-family: "Rubik", sans-serif;
+    font-size: 8vw;
+    margin: 0px 10vw;
+    width: 80vw;
+}
+
+.side .fancy {
+    font-family: "Lobster", cursive;
+    font-size: 1.3em;
+    line-height: 0.8em;
+}
+
+#lado-esq {
+    background-color: var(--left-color);
+    width: 60%;
+    z-index: 2;
+}
+
+#lado-esq .title {
+    color: white;
+}
+
+#lado-esq .fancy {
+    color: var(--right-color);
+}
+
+#lado-dir {
+    background-color: var(--right-color);
+}
+
+#lado-dir .title {
+    color: var(--dark);
+}
+
+#lado-dir .fancy {
+    color: white;
+}
