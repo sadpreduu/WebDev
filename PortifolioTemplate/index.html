@@ -1,0 +1,145 @@
+<link rel="stylesheet" href="style.css">
+<nav data-toggled="false" data-transitionable="false">
+    <div id="nav-logo-section" class="nav-section">
+      <a href="#">
+        <i class="fa-solid fa-dumpster-fire"></i>
+      </a>
+    </div>
+    <div id="nav-mobile-section">
+      <div id="nav-link-section" class="nav-section">
+        <a href="#">SOBRE</a>
+        <a href="#">TRABALHOS</a>
+      </div>
+      <div id="nav-social-section" class="nav-section">
+        <a href="#">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="" target="_blank">
+          <i class="fa-brands fa-youtube"></i>
+        </a>    
+        <a href="#">
+          <i class="fa-brands fa-codepen"></i>
+        </a>
+      </div>
+      <div id="nav-contact-section" class="nav-section">
+        <a href="#">CONTATO</a>
+      </div>
+    </div>
+    <button id="nav-toggle-button" type="button" onclick="handleNavToggle()">
+      <span>Menu</span>
+      <i class="fa-solid fa-bars"></i>
+    </button>
+</nav>
+  
+<main>
+    <article data-index="0" data-status="active">
+      <div class="article-image-section article-section"></div>
+      <div class="article-description-section article-section">
+        <p>
+          Projetos Solidos;
+        </p>
+      </div>
+      <div class="article-title-section article-section">
+        <h2>Valdinei Space Portifolio</h2>
+        <i class="fa-light fa-plus-large"></i>
+      </div>
+      <div class="article-nav-section article-section">
+        <button class="article-nav-button" type="button" onclick="handleLeftClick()">
+          <i class="fa-light fa-arrow-left-long"></i>
+        </button>
+        <button class="article-nav-button" type="button" onclick="handleRightClick()">
+          <i class="fa-light fa-arrow-right-long"></i>
+        </button>
+      </div>
+    </article>
+    <article data-index="1" data-status="inactive">    
+      <div class="article-image-section article-section"></div>
+      <div class="article-description-section article-section">
+        <p>Um Lugar onde os conceitos são criados e por lá tomam forma;</p>
+      </div>
+      <div class="article-title-section article-section">
+          <h2>Biblioteca de ideas e conceitos.</h2>
+        <i class="fa-light fa-plus-large"></i>
+      </div>
+      <div class="article-nav-section article-section">
+        <button class="article-nav-button" type="button" onclick="handleLeftClick()">
+          <i class="fa-light fa-arrow-left-long"></i>
+        </button>
+        <button class="article-nav-button" type="button" onclick="handleRightClick()">
+          <i class="fa-light fa-arrow-right-long"></i>
+        </button>
+      </div>
+    </article>
+    <article data-index="2" data-status="inactive">    
+      <div class="article-image-section article-section"></div>
+      <div class="article-description-section article-section">
+        <p>O farol das soluções de footer-content;</p>
+      </div>
+      <div class="article-title-section article-section">
+        <h2>Lighthouse</h2>
+        <i class="fa-light fa-plus-large"></i>
+      </div>
+      <div class="article-nav-section article-section">
+        <button class="article-nav-button" type="button" onclick="handleLeftClick()">
+          <i class="fa-light fa-arrow-left-long"></i>
+        </button>
+        <button class="article-nav-button" type="button" onclick="handleRightClick()">
+          <i class="fa-light fa-arrow-right-long"></i>
+        </button>
+      </div>
+    </article>
+    <article data-index="3" data-status="inactive">    
+      <div class="article-image-section article-section"></div>
+      <div class="article-description-section article-section">
+        <p>
+          Criei o universo para me diverti e morri pelas mãos da Rockstar Games;
+        </p>
+      </div>
+      <div class="article-title-section article-section">
+        <h2>Valdge Studios</h2>
+        <i class="fa-light fa-plus-large"></i>
+      </div>
+      <div class="article-nav-section article-section">
+        <button class="article-nav-button" type="button" onclick="handleLeftClick()">
+          <i class="fa-light fa-arrow-left-long"></i>
+        </button>
+        <button class="article-nav-button" type="button" onclick="handleRightClick()">
+          <i class="fa-light fa-arrow-right-long"></i>
+        </button>
+      </div>
+    </article>
+    <footer id="footer">
+        <div id="footer-content">
+          <div class="footer-section">
+            <h3 class="footer-section-title">General</h3>
+            <div class="footer-section-links">
+              <a href="https://www.youtube.com/c/Hyperplexed" target="_blank">Directory</a>
+              <a href="https://www.youtube.com/c/Hyperplexed" target="_blank">About</a>
+              <a href="https://www.youtube.com/c/Hyperplexed" target="_blank">Contact Us</a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h3 class="footer-section-title">Social</h3>
+            <div class="footer-section-links">
+              <a href="https://www.youtube.com/c/Hyperplexed" target="_blank">Twitter</a>
+              <a href="https://www.youtube.com/c/Hyperplexed" target="_blank">CodePen</a>
+              <a href="https://www.youtube.com/c/Hyperplexed" target="_blank">YouTube</a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h3 class="footer-section-title">Legal</h3>
+            <div class="footer-section-links">
+              <a href="https://www.youtube.com/c/Hyperplexed" target="_blank">Privacy</a>
+              <a href="https://www.youtube.com/c/Hyperplexed" target="_blank">Terms</a>
+              <a href="https://www.youtube.com/c/Hyperplexed" target="_blank">Cookies</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+</main>
+
+<div id="bubble-wrapper">
+  
+</div>
+
+<script src="main.js"></script>
