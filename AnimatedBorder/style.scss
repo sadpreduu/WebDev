@@ -1,0 +1,85 @@
+body, html, #app{
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+
+body{
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#app{  
+  overflow: auto;
+  #loading-indicators{
+    left: 50%;
+    margin: 20px;
+    margin-top: 100px;
+    position: absolute;
+    top: 0px;
+    transform: translateX(-50%);
+    .loading-indicator{
+      border-radius: 15px;
+      box-shadow: $shadow1;
+      height: 200px;    
+      margin: 20px auto;
+      overflow: hidden;
+      position: relative;
+      width: 322px;
+
+      h1{
+        @include center;
+        font-family: 'Roboto', san-serif;
+        font-size: 1em;
+        font-weight: 400;
+        margin: 0px;
+        text-align: center;
+        z-index: 3;
+      }
+
+      &:before, &:after{
+        @include center;
+        content: '';
+      }
+
+      &:after{
+        background-color: white;
+        border-radius: 13px;
+        height: calc(100% - 4px);
+        width: calc(100% - 4px);
+      }
+
+      &:before{
+        animation: loading-indicator-rotation 3s linear infinite;
+        background: $blue;
+        height: 150px;
+        width: 200%;
+      }
+    }
+
+    #loading-indicator__1:before{
+      background: $blue;
+    }
+
+    #loading-indicator__2:before{
+      background: conic-gradient(red, yellow, lime, aqua, blue, magenta, red);
+      height: 200%;
+    }
+
+    #loading-indicator__3:before{
+      background: linear-gradient(to right, $orange 50%, $blue 50%);
+      height: 75px;
+    }
+  }
+}
+
+@keyframes loading-indicator-rotation{
+  from{
+    transform: translateX(-50%) translateY(-50%) rotate(0deg);  
+  }
+  
+  to{
+    transform: translateX(-50%) translateY(-50%) rotate(360deg);
+  }
+}

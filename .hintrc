@@ -24,6 +24,8 @@
         "button-name": "off",
         "link-name": "off"
       }
-    ]
+    ],
+    "disown-opener": "off",
+    "compat-api/css": "off"
   }
 }
