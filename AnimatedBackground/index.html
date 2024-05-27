@@ -5,15 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=w, initial-scale=1.0">
+<<<<<<< HEAD
     <title>Mouse Animated Background
     </title>
+=======
+    <title>M. Salada</title>
+>>>>>>> 85129af53975506d06044c2652a6ffe97f5feab4
 </head>
 <body>
     <nav>
       <div class="nav_menu">
         <ul class="nav_list">
           <li>
-            <a href="#" class="nav_link">Home</a>
+            <a href="#" class="nav_link">Welcome</a>
           </li>
           <li>
             <a href="#" class="nav_link">Projects</a>
@@ -32,6 +36,16 @@
       <span id="text1"></span>
       <span id="text2"></span>
     </div>
+
+    <svg id="filters">
+        <defs>
+          <filter id="threshold">
+            <feColorMatrix in="SourceGraphic"
+            type="matrix"
+            values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 255 -1 40"/>
+          </filter>
+        </defs>
+    </svg>
     <script src="script.js"></script>
   </body>
 </html>
