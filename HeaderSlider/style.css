@@ -1,14 +1,15 @@
 :root {
-    --dark: rgb(20, 20, 20);
-    --yellow: rgb(253, 216, 53);
-    --blue: rgb(98, 0, 234);
+    --dark: rgb(75, 0, 0); /* Um tom bem escuro de vermelho */
+    --yellow: rgb(247, 29, 108); /* A cor base fornecida #F71D6CFF */
+    --blue: rgb(139, 0, 0); /* Um tom de vermelho escuro, substituindo o azul */
     
-    --c1: rgb(38, 70, 83);
-    --c2: rgb(42, 157, 143);
+    --c1: rgb(231, 56, 93); /* Um tom de vermelho médio */
+    --c2: rgb(247, 72, 117); /* Um tom mais claro de vermelho */
     
     --left-color: var(--c1);
     --right-color: var(--c2);
 }
+
 
 body {
     background-color: var(--dark);
